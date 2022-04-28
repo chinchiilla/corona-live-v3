@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@components/*": ["./components/*"],
+            "@hooks/*": ["./hooks/*"],
+            "@contexts/*": ["./contexts/*"],
+            "@types/*": ["./types/*"],
+            "@states/*": ["./states/*"],
+            "@styles/*": ["./styles/*"],
+            "@utils/*": ["./utils/*"],
+            "@types": ["./utils/types/*"],
+            "@consts": ["./utils/consts"],
+            "@styles": ["./styles/index"],
+            "@constsV2": ["./utils/constsV2"],
+            "@helper": ["./utils/helper"],
+            "@utils": ["./utils/helper"],
+            "@api": ["./utils/api"]
+        },
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": false,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "downlevelIteration": true
+    },
+    "exclude": ["node_modules"],
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "./module.d.ts",
+        "components/nextScriptCustom.js",
+        "components/headCustom.js",
+        "styles/mixins.js"
+    ]
+}
